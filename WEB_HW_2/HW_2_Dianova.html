@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Из жизни квокк</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <!-- <script>
+        alert("Привет, мир!")
+    </script> -->
+
+    <!-- <script defer src="./assets/scripts/script.js"></script> -->
+</head>
+<body class="body">
+    <!-- Java
+    <script>
+        let name = "Марина"
+        alert(`Привет, ${name}!`)
+        alert(`Привет, ${158+2}!`)
+    </script> -->
+    <script defer src="./assets/scripts/script.js"></script>
+    <div class="boxwrapper">
+        <img src="https://cdn-st1.rtr-vesti.ru/vh/pictures/xw/230/595/0.jpg" width="800" heigh="400" onmouseover="this.src='https://cs9.pikabu.ru/post_img/2019/04/10/11/og_og_155492578323511687.jpg'" onmouseout="this.src='https://cdn-st1.rtr-vesti.ru/vh/pictures/xw/230/595/0.jpg'" />
+        <h1 class="title" id="el1"><b>Из жизни квокк</b></h1>
+       
+    </div>
+    <div class="boxwrapper_2">
+    <div class="box">
+       <img src="https://mir-znaniy.com/wp-content/uploads/2021/04/bezymyannyj.png" width="400" height="250"> 
+       <h2 class="title_2" id="el2">Какие бывают квокки:</h2>
+        <script>
+            el2.onmouseover = function(){
+                el2.style.color= "green";
+            };
+            el2.onmouseleave = function(){
+                el2.style.color= "white";
+            };
+        </script>
+
+        <ul id="el3">
+            <li>Милые</li>
+            <li>Добрые</li>
+            <li>Ласковые</li>
+            <li>Очаровательные</li>
+        </ul>
+
+    </div>
+    <div class="box">
+        <img src="https://babr24.com/n2p/i/2019/11/19_11_24_2_24132909_b.jpg" width="400" height="250">
+        <h2 class="title_2" id="el5">Что любят квокки:</h2>
+        <script>
+            el5.onmouseover = function(){
+                el5.style.color= "green";
+            };
+            el5.onmouseleave = function(){
+                el5.style.color= "white";
+            };
+        </script>
+
+        <ol id="el4">
+            <li>Улыбаться</li>
+            <li>Обниматься</li>
+            <li>Целоваться</li>
+            <li>Кушать</li>
+        </ol>
+       
+    </div>
+  
+    </div>
+      
+    <div class="boxwrapper_3">
+        <button class="second_button" id="btn_list"><b>Изменить цвет списков</b></button>
+        
+        <h3>Больше о квокках читайте
+            <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B2%D0%BE%D0%BA%D0%BA%D0%B0">здесь</a>
+        </h3>
+    
+        <button id="btn"><b>Изменить цвет заголовка</b></button>   
+    </div>
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 Seminar</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <script defer src="./assets/scripts/script.js"> </script>
+</head>
+
+<body>
+
+    <section>
+        <h1 class="title" id="el1">   Всем привет!</h1>
+        
+        <h2 id="el2">Описание моего сайта</h2>
+
+        <div class="boxWrapper">
+            <div class="box">
+                <p>Мой первый блок паыпывппвп gfgfdgfd gfdg gfd g fdgfgg </p>
+            </div>
+            <div class="box">
+                <p>Мой первый блок паыпывппвп gfgfdgfd gfdg gfd g fdgfgg </p>
+            </div>
+        </div>
+        <div class="image">
+            <img src="https://lapkins.ru/upload/iblock/47b/47bb121df27d33a36d8e84091b83ee5c.jpg" width="250"
+                height="250">
+        </div>
+        <button id="btn"> Изменить цвет элемента</button>
+        <button class="ice"> Как угодно</button>
+    </section>
+</body>
+
+</html> -->
+
+<!-- 
+// let name = prompt(" Введите своё имя ");
+// // ` ё
+// alert(`Привет, ${name}!`) 
+alert(`Привет, ${158 + 2}!`);
+
+// let element = document.getElementById('el1');
+// console.log(element);
+// element.classList.add('active')
+
+
+
+let count = 0;
+function clickButton() {
+    // alert('кнопка нажата');
+
+
+    let element = document.getElementById('el1');
+    // if (count % 2 == 0) element.classList.add('active')
+    // else element.classList.remove('active')
+    // count ++
+    // element.classList.contains('active') - проверка на класс, если этот класс - true, если нет - false
+    element.classList.toggle('active')
+}
+let btn = document.getElementById('btn');
+console.log(btn)
+btn.addEventListener('click', clickButton)
+
+
+
+
+function iceClick() {
+    let element = document.getElementById('el2'); 
+    if (count % 2 == 0) element.classList.add('ice')
+    else element.classList.remove('ice')
+    count++;
+}
+let ice = document.getElementsByClassName('ice')
+console.log(ice)
+ice[0].addEventListener('click', iceClick)
+
+22:00
+h1,
+h2 {
+    color: green;
+    font-size: 60px;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+.title {
+    color: red;
+    font-size: 45px;
+}
+
+.boxWrapper{
+margin-top: 30px;
+display: flex;
+}
+
+.box {
+    margin-top: 30px;
+    /* border: 2px solid greenyellow; */
+    border: 2px dashed greenyellow;
+    width: 200px;
+    padding: 20px;
+}
+.image{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 500px;
+}
+
+button{
+    width: 250px;
+    height: 300px;
+}
+
+.ice{
+    color: brown;
+    width: 150px;
+    height: 150px;
+}
+
+.active{
+    color: aqua;
+    font-size: 100px;
+} -->
