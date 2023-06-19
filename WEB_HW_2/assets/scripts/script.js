@@ -51,6 +51,31 @@ console.log(btn_lst)
 btn_lst[0].addEventListener('click', btn_list)
 
 
+async function sendRequest(event){
+    // получили запрос в инпут
+    let name = document.getElementsByTagName('input')[0].value;
+    let url = 'https://jsonplaceholder.typicode.com/users/';
+    event.preventDefault(); //не обновлять страницу
+    // отправляем запрос на сервер, чтобы записать данные
+    let response = await fetch(url,
+    {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        // преобразование в JSON
+        body: JSON.stringify(name)
+
+    });
+    // ответ сервера
+    alert(response.status);
+    alert(name);
+}
+
+let form = document.getElementById("form");
+form.addEventListener('submit', sendRequest);
+
+
 
 
 // element.textContent
